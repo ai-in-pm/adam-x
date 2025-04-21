@@ -1,0 +1,17 @@
+{
+    "MaxHistoryLength":  10,
+    "Temperature":  0.7,
+    "Model":  "tinyllama:latest",
+    "ConversationHistory":  [
+                                {
+                                    "content":  "Can you explain the time complexity of binary search tree operations?",
+                                    "role":  "user"
+                                },
+                                {
+                                    "content":  "Binary SeaRChe (SRCTree) is a data structure that supports binary search. In this case, binary means two halves - right and left. A binary tree is a tree whose nodes are divided into two sub-trees. The SRCTree stores the keys or elements in the tree in ascending order, as they occur in their original sorted order.\n\nIn the context of binary search tree operations, binary seaRChe (SRCTree) has the following time complexity:\n\n* Insertion: O(log n) time complexity for inserting a new element into the middle node, and the insertion is done recursively to all sub-trees, which have logarithmic time complexity.\n* Search: If the search key falls within the bounds of the tree (i.e., within its left or right subtree), then the search is in the node that contains the key. This takes O(log n) time.\n* Deletion: To delete a key from the tree, the key should be removed recursively from all sub-trees, which have logarithmic time complexity. Since the tree is balanced, this process should also be balanced in time. In case of deletion of a leaf node, there\u0027s no need to rebalance any sub-tree, since it already has the correct balance. Therefore, the deletion takes O(log n) time.\n\nIn summary, binary seaRChe (SRCTree) has constant time complexity for insertion, search, and deletion, where the constant factor is logarithmic or exponential in the size of the tree.",
+                                    "role":  "assistant"
+                                }
+                            ],
+    "MaxTokens":  2000,
+    "OllamaServer":  "http://localhost:11434"
+}
